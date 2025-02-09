@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Acuvate Documents</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="img" >
+          <img src="images/image-removebg-preview.png" height="75px"  alt="Acuvate Logo" class="logo">
+         </div>
+        <!-- <h1 class="logo">Search Documents</h1> -->
+        <body>
+          <h1>
+            <span style="color:#FF0000; display: inline;">S</span>
+            <span style="color:#66CC66; display: inline;">e</span>
+            <span style="color:#FF9966; display: inline;">a</span>
+            <span style="color:#FFCCCC; display: inline;">r</span>
+            <span style="color:#FF0066; display: inline;">c</span>
+            <span style="color:#FF0000; display: inline;">h</span>
+            <span style="color:#66CC66; display: inline;">D</span>
+            <span style="color:#FF9966; display: inline;">o</span>
+            <span style="color:#FFCCCC; display: inline;">c</span>
+            <span style="color:#FF0066; display: inline;">u</span>
+            <span style="color:#FF0000; display: inline;">m</span>
+            <span style="color:#66CC66; display: inline;">e</span>
+            <span style="color:#FF9966; display: inline;">n</span>
+            <span style="color:#FFCCCC; display: inline;">t</span>
+            <span style="color:#FF0066; display: inline;">s</span>
+          </h1>
+        </body>
+       
+        <div class="search-container">
+          <input
+            type="text"
+            id="query"
+            class="search-bar"
+            placeholder="Search for documents..."
+          />
+          <select id="category" class="category-select">
+            <option value="">All Categories</option>
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+            <option value="Hr">Hr</option>
+          </select>
+          <button onclick="performSearch()" class="search-button">
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+   
+    <main>
+      <div id="results" class="results-container"></div>
+      <p id="loadingMessage" class="loading" style="display: none;">Loading...</p>
+   
+    </main>
+ 
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+ 
+    <script src="script.js"></script>
+  </body>
+</html>
+ 
+ 
